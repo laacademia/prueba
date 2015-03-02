@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Quintus</title>
+	
+	<!-- Importando librerías localmente -->
+
+		<script src="lib/jquery-1.11.1.min.js"></script>
+		<script src="lib/quintus.js"></script>
+		<script src="lib/quintus_2d.js"></script>
+		<script src="lib/quintus_anim.js"></script>
+		<script src="lib/quintus_audio.js"></script>
+		<script src="lib/quintus_input.js"></script>
+		<script src="lib/quintus_scenes.js"></script>
+		<script src="lib/quintus_sprites.js"></script>
+		<script src="lib/quintus_tmx.js"></script>
+		<script src="lib/quintus_touch.js"></script>
+		<script src="lib/quintus_ui.js"></script>
+		<!-- Importando desde un CDN -->
+		<!--
+		<script src='http://cdn.html5quintus.com/v0.2.0/quintus-all.js'></script>
+		-->
+		<style>
+			#barra{
+				background-color:red;
+				height:70px;
+				width:30%;
+			}
+			#contenedor-boton{
+				display:none;
+			}
+		</style>
+</head>
+<body>
+	<div id="contenedor-barra">
+		<h1>Loading..</h1>
+		<div id="barra"> </div>
+	</div>
+	<div id="contenedor-boton">
+		<button id="boton-pausa" type="button">Pausar</button>
+	</div>
+	<canvas width="800px" height="400px" id="juego"> <!-- a este ancho lo cambia "maximize en inicializar.js". Si quiero que se respeten los valores que estan aca borro la linea de maximize -->
+		No se puede ejecutar.
+	</canvas>
+	
+	<script src="juego/inicializar.js"></script>
+	<script src="juego/jugador.js"></script>
+	<script src="juego/goomba.js"></script>
+	<script src="juego/tortuga.js"></script>	
+	<script src="juego/caja.js"></script>
+	<script src="juego/tuberiaEntrada.js"></script>
+	<script src="juego/tuberiaSalida.js"></script>		
+	<script src="juego/escena.js"></script>
+	<script src="juego/escena_subterranea.js"></script>
+	<script src="juego/score.js"></script>
+	<script src="juego/cargar_recursos.js"></script>
+</body>
+</html>
